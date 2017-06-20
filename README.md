@@ -53,4 +53,19 @@ console.log(num); // "123"
 ~~~
 
 
+## Properties getter/setter
+
+~~~
+private _timeInterval: number;
+
+get timeInterval(): number {
+    return this._timeInterval;
+}
+ 
+set timeInterval(value: number) {
+    if (value === undefined) throw 'Please supply time interval';
+    this._timeInterval = value;
+}
+
+~~~
 
