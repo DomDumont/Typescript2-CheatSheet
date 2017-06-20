@@ -69,3 +69,29 @@ set timeInterval(value: number) {
 
 ~~~
 
+## Instantiate interface
+
+Instead of
+
+    this.model = Object(); // initialize this to an empty object
+
+Do this :
+
+    this._models = <IModels> {};
+
+
+## Singleton
+
+~~~
+
+private static instance: MyClassName;
+
+static getInstance() {
+        if (!MyClassName.instance) {
+            MyClassName.instance = new MyClassName();
+            // ... any one time initialization goes here ...
+        }
+        return MyClassName.instance;
+    }
+
+~~~
