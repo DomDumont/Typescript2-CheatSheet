@@ -80,6 +80,14 @@ Do this :
     this._models = <IModels> {};
 
 
+## Instantiate empty object and then add properties dynamically
+
+~~~
+    var opts:any = {}
+    opts.jwtFromRequest = ExtractJwt.fromAuthHeader();
+    opts.secretOrKey = 'config.secret';
+~~~    
+
 ## Singleton
 
 ~~~
