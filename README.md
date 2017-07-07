@@ -103,3 +103,14 @@ static getInstance() {
     }
 
 ~~~
+
+## Get/Set/accesors/property
+
+~~~
+get Text():string {
+
+}
+
+set Text(value:string) {
+}
+~~~
