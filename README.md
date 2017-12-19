@@ -114,3 +114,9 @@ get Text():string {
 set Text(value:string) {
 }
 ~~~
+
+## Tips for importing JS without having types for it
+
+~~~
+declare const foo: any;
+~~~
